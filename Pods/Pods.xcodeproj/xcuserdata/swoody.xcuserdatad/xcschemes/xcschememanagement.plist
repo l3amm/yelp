@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>Pods-yelp-AFNetworking.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>2</integer>
+		</dict>
+		<key>Pods-yelp-BDBOAuth1Manager.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>3</integer>
+		</dict>
+		<key>Pods-yelp.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>0E773D8E0C5D4B468DDD83E0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>121DB40A017D4235B0D820AE</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>39DF6A08A00B42348B2F6617</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6DDD10C648B642A0BCF929A0</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>8CE1123140DE4BB4A2F1D9DB</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F97587F7E05841C590FB5BAA</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>

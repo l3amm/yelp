@@ -1,25 +1,131 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="c7g-mC-DW9">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Restaurant List View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="RestaurantListViewController" customModule="yelp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="159" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="qPX-Vp-WSM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="com.codepath.yelp.restaurantCell" rowHeight="159" id="znk-es-AGh" customClass="RestaurantTableViewCell" customModule="yelp" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="znk-es-AGh" id="DPm-ii-ukT">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Food zone" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s5K-kY-Vpt">
+                                                    <rect key="frame" x="10" y="97" width="221" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="3 stars" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvb-NK-Y7j">
+                                                    <rect key="frame" x="10" y="128" width="93" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="This place tastes so good" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QUO-XH-3tV">
+                                                    <rect key="frame" x="113" y="128" width="197" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Hlc-nx-uvc">
+                                                    <rect key="frame" x="10" y="10" width="300" height="67"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="300" id="FlU-5f-Gqq"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="253" ambiguous="YES" text="2.0 miles" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hg-dv-zDV">
+                                                    <rect key="frame" x="241" y="99" width="69" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QUO-XH-3tV" firstAttribute="top" secondItem="1Hg-dv-zDV" secondAttribute="bottom" constant="8.5" id="4Vh-8U-lgJ"/>
+                                                <constraint firstItem="1Hg-dv-zDV" firstAttribute="leading" secondItem="s5K-kY-Vpt" secondAttribute="trailing" constant="10" id="7BU-p0-x4z"/>
+                                                <constraint firstItem="QUO-XH-3tV" firstAttribute="leading" secondItem="zvb-NK-Y7j" secondAttribute="trailing" constant="10" id="JBs-74-1E9"/>
+                                                <constraint firstItem="zvb-NK-Y7j" firstAttribute="top" secondItem="s5K-kY-Vpt" secondAttribute="bottom" constant="10" id="Pmk-eQ-iS1"/>
+                                                <constraint firstAttribute="bottom" secondItem="zvb-NK-Y7j" secondAttribute="bottom" constant="10" id="RH1-NW-mmT"/>
+                                                <constraint firstItem="zvb-NK-Y7j" firstAttribute="leading" secondItem="DPm-ii-ukT" secondAttribute="leading" constant="10" id="RKr-m4-LUk"/>
+                                                <constraint firstItem="s5K-kY-Vpt" firstAttribute="leading" secondItem="DPm-ii-ukT" secondAttribute="leading" constant="10" id="YBT-Cz-8J3"/>
+                                                <constraint firstItem="s5K-kY-Vpt" firstAttribute="top" secondItem="Hlc-nx-uvc" secondAttribute="bottom" constant="20" id="YfF-ag-KgN"/>
+                                                <constraint firstAttribute="bottom" secondItem="QUO-XH-3tV" secondAttribute="bottom" constant="10" id="b3w-tg-oFL"/>
+                                                <constraint firstItem="Hlc-nx-uvc" firstAttribute="top" secondItem="DPm-ii-ukT" secondAttribute="top" constant="10" id="nZe-lp-VRb"/>
+                                                <constraint firstAttribute="trailing" secondItem="QUO-XH-3tV" secondAttribute="trailing" constant="10" id="vEg-W8-l1X"/>
+                                                <constraint firstItem="Hlc-nx-uvc" firstAttribute="leading" secondItem="DPm-ii-ukT" secondAttribute="leading" constant="10" id="vfO-cN-wcW"/>
+                                                <constraint firstAttribute="trailing" secondItem="1Hg-dv-zDV" secondAttribute="trailing" constant="10" id="xGN-cL-dIo"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="distanceUILabel" destination="1Hg-dv-zDV" id="qDT-Nv-2Ki"/>
+                                            <outlet property="restaurantImageView" destination="Hlc-nx-uvc" id="9ZB-ug-ToZ"/>
+                                            <outlet property="reviewUILabel" destination="QUO-XH-3tV" id="IxL-yO-w3U"/>
+                                            <outlet property="titleUILabel" destination="s5K-kY-Vpt" id="gBT-Xb-XJW"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="vXZ-lx-hvc" id="Xvm-S1-4pQ"/>
+                                    <outlet property="delegate" destination="vXZ-lx-hvc" id="qKF-6W-O7N"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="qPX-Vp-WSM" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="4Bl-P3-6uV"/>
+                            <constraint firstItem="qPX-Vp-WSM" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="Fmy-Kh-XEy"/>
+                            <constraint firstAttribute="trailing" secondItem="qPX-Vp-WSM" secondAttribute="trailing" id="Jpz-Jt-uuZ"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qPX-Vp-WSM" secondAttribute="bottom" id="S0o-N8-KFN"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="cLq-wU-Ks9"/>
+                    <connections>
+                        <outlet property="restaurantTableView" destination="qPX-Vp-WSM" id="Gqq-8o-MAF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="694" y="343"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="z5U-EC-09n">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="c7g-mC-DW9" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="tgm-lO-ypD">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="vXZ-lx-hvc" kind="relationship" relationship="rootViewController" id="4Gt-oQ-I69"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3QI-AR-tDa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="162" y="345"/>
         </scene>
     </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
