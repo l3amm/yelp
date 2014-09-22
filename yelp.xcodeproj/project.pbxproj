@@ -10,6 +10,9 @@
 		8313C2CE64044D84ADE2DCCC /* libPods-yelp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 228EB77B1A0F448B81CF1663 /* libPods-yelp.a */; };
 		EFBD6E1B19CF506700FF1E35 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD6E1A19CF506700FF1E35 /* RestaurantTableViewCell.swift */; };
 		EFBD6E1D19CF519700FF1E35 /* turkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFBD6E1C19CF519700FF1E35 /* turkey.jpg */; };
+		EFBD6E1F19CF63F900FF1E35 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD6E1E19CF63F900FF1E35 /* FiltersViewController.swift */; };
+		EFBD6E2119CF725D00FF1E35 /* stars_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBD6E2019CF725D00FF1E35 /* stars_4.png */; };
+		EFBD6E2319CF960500FF1E35 /* categoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD6E2219CF960500FF1E35 /* categoryTableViewCell.swift */; };
 		EFEB047219CD2DFD003E3D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB047119CD2DFD003E3D88 /* AppDelegate.swift */; };
 		EFEB047719CD2DFD003E3D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEB047519CD2DFD003E3D88 /* Main.storyboard */; };
 		EFEB047919CD2DFD003E3D88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEB047819CD2DFD003E3D88 /* Images.xcassets */; };
@@ -33,6 +36,9 @@
 		228EB77B1A0F448B81CF1663 /* libPods-yelp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yelp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFBD6E1A19CF506700FF1E35 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		EFBD6E1C19CF519700FF1E35 /* turkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turkey.jpg; sourceTree = "<group>"; };
+		EFBD6E1E19CF63F900FF1E35 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
+		EFBD6E2019CF725D00FF1E35 /* stars_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars_4.png; sourceTree = "<group>"; };
+		EFBD6E2219CF960500FF1E35 /* categoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryTableViewCell.swift; sourceTree = "<group>"; };
 		EFEB046C19CD2DFD003E3D88 /* yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEB047019CD2DFD003E3D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFEB047119CD2DFD003E3D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -108,6 +114,7 @@
 			children = (
 				EFEB047119CD2DFD003E3D88 /* AppDelegate.swift */,
 				EFEB047519CD2DFD003E3D88 /* Main.storyboard */,
+				EFBD6E2219CF960500FF1E35 /* categoryTableViewCell.swift */,
 				EFEB047819CD2DFD003E3D88 /* Images.xcassets */,
 				EFBD6E1719CD3A9400FF1E35 /* API */,
 				EFEB047A19CD2DFD003E3D88 /* LaunchScreen.xib */,
@@ -115,7 +122,9 @@
 				EFEB049119CD2E9A003E3D88 /* RestaurantListViewController.swift */,
 				EFEB04D519CD38E4003E3D88 /* yelp-bridging-header.h */,
 				EFBD6E1C19CF519700FF1E35 /* turkey.jpg */,
+				EFBD6E2019CF725D00FF1E35 /* stars_4.png */,
 				EFBD6E1A19CF506700FF1E35 /* RestaurantTableViewCell.swift */,
+				EFBD6E1E19CF63F900FF1E35 /* FiltersViewController.swift */,
 			);
 			path = yelp;
 			sourceTree = "<group>";
@@ -231,6 +240,7 @@
 				EFBD6E1D19CF519700FF1E35 /* turkey.jpg in Resources */,
 				EFEB047C19CD2DFD003E3D88 /* LaunchScreen.xib in Resources */,
 				EFEB047919CD2DFD003E3D88 /* Images.xcassets in Resources */,
+				EFBD6E2119CF725D00FF1E35 /* stars_4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +295,8 @@
 				EFEB049219CD2E9A003E3D88 /* RestaurantListViewController.swift in Sources */,
 				EFEB04D719CD3952003E3D88 /* YelpClient.swift in Sources */,
 				EFEB047219CD2DFD003E3D88 /* AppDelegate.swift in Sources */,
+				EFBD6E1F19CF63F900FF1E35 /* FiltersViewController.swift in Sources */,
+				EFBD6E2319CF960500FF1E35 /* categoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

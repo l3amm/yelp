@@ -1,5 +1,5 @@
 //
-//  RestaurantTableViewCell.swift
+//  categoryTableViewCell.swift
 //  yelp
 //
 //  Created by Scott Woody on 9/21/14.
@@ -8,19 +8,15 @@
 
 import UIKit
 
-class RestaurantTableViewCell: UITableViewCell {
+class categoryTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var titleUILabel: UILabel!
-    @IBOutlet weak var restaurantImageView: UIImageView!
-    @IBOutlet weak var distanceUILabel: UILabel!
-    @IBOutlet weak var ratingImageView: UIImageView!
-    @IBOutlet weak var reviewUILabel: UILabel!
-
+    @IBOutlet weak var titleLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
     }
 
+    @IBOutlet weak var valueSwitch: UISwitch!
     override func setSelected(selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
