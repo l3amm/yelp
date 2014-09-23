@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6245" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="headerView" customModule="yelp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="skz-AC-HRQ">
+                    <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                    <variation key="heightClass=compact-widthClass=compact" misplaced="YES">
+                        <rect key="frame" x="21" y="20" width="42" height="21"/>
+                    </variation>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="skz-AC-HRQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="SNQ-7f-iYX"/>
+                <constraint firstAttribute="bottom" secondItem="skz-AC-HRQ" secondAttribute="bottom" constant="10" id="Z5U-o4-udg"/>
+                <constraint firstItem="skz-AC-HRQ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="20" id="ZpH-Hd-zG8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <variation key="default">
+                <mask key="subviews">
+                    <exclude reference="skz-AC-HRQ"/>
+                </mask>
+                <mask key="constraints">
+                    <exclude reference="SNQ-7f-iYX"/>
+                    <exclude reference="Z5U-o4-udg"/>
+                    <exclude reference="ZpH-Hd-zG8"/>
+                </mask>
+            </variation>
+            <variation key="heightClass=compact-widthClass=compact">
+                <mask key="subviews">
+                    <include reference="skz-AC-HRQ"/>
+                </mask>
+                <mask key="constraints">
+                    <include reference="SNQ-7f-iYX"/>
+                    <include reference="Z5U-o4-udg"/>
+                    <include reference="ZpH-Hd-zG8"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="catLabel" destination="skz-AC-HRQ" id="6O7-iT-02a"/>
+            </connections>
+            <point key="canvasLocation" x="151" y="237.5"/>
+        </view>
+    </objects>
+</document>

@@ -8,11 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		8313C2CE64044D84ADE2DCCC /* libPods-yelp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 228EB77B1A0F448B81CF1663 /* libPods-yelp.a */; };
+		EF753B5C19CFE34B00BBDCE2 /* sortTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753B5B19CFE34B00BBDCE2 /* sortTableViewCell.swift */; };
+		EF753B5E19D0826900BBDCE2 /* iconmonstr-sort-10-icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = EF753B5D19D0826900BBDCE2 /* iconmonstr-sort-10-icon-16.png */; };
+		EF753B6019D0836000BBDCE2 /* distanceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753B5F19D0836000BBDCE2 /* distanceTableViewCell.swift */; };
+		EF753B6419D08D1500BBDCE2 /* iconmonstr-circle-outline-icon-16.png in Resources */ = {isa = PBXBuildFile; fileRef = EF753B6319D08D1500BBDCE2 /* iconmonstr-circle-outline-icon-16.png */; };
+		EF753B6619D08E4200BBDCE2 /* dealsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EF753B6519D08E4200BBDCE2 /* dealsTableViewCell.swift */; };
 		EFBD6E1B19CF506700FF1E35 /* RestaurantTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD6E1A19CF506700FF1E35 /* RestaurantTableViewCell.swift */; };
 		EFBD6E1D19CF519700FF1E35 /* turkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFBD6E1C19CF519700FF1E35 /* turkey.jpg */; };
 		EFBD6E1F19CF63F900FF1E35 /* FiltersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD6E1E19CF63F900FF1E35 /* FiltersViewController.swift */; };
 		EFBD6E2119CF725D00FF1E35 /* stars_4.png in Resources */ = {isa = PBXBuildFile; fileRef = EFBD6E2019CF725D00FF1E35 /* stars_4.png */; };
 		EFBD6E2319CF960500FF1E35 /* categoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFBD6E2219CF960500FF1E35 /* categoryTableViewCell.swift */; };
+		EFE3D6E919D1C80100ABBD74 /* header.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE3D6E819D1C80100ABBD74 /* header.xib */; };
+		EFE3D6EB19D1C86100ABBD74 /* headerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFE3D6EA19D1C86100ABBD74 /* headerView.swift */; };
 		EFEB047219CD2DFD003E3D88 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EFEB047119CD2DFD003E3D88 /* AppDelegate.swift */; };
 		EFEB047719CD2DFD003E3D88 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFEB047519CD2DFD003E3D88 /* Main.storyboard */; };
 		EFEB047919CD2DFD003E3D88 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFEB047819CD2DFD003E3D88 /* Images.xcassets */; };
@@ -34,11 +41,18 @@
 
 /* Begin PBXFileReference section */
 		228EB77B1A0F448B81CF1663 /* libPods-yelp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-yelp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF753B5B19CFE34B00BBDCE2 /* sortTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = sortTableViewCell.swift; sourceTree = "<group>"; };
+		EF753B5D19D0826900BBDCE2 /* iconmonstr-sort-10-icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-sort-10-icon-16.png"; sourceTree = "<group>"; };
+		EF753B5F19D0836000BBDCE2 /* distanceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = distanceTableViewCell.swift; sourceTree = "<group>"; };
+		EF753B6319D08D1500BBDCE2 /* iconmonstr-circle-outline-icon-16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "iconmonstr-circle-outline-icon-16.png"; sourceTree = "<group>"; };
+		EF753B6519D08E4200BBDCE2 /* dealsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = dealsTableViewCell.swift; sourceTree = "<group>"; };
 		EFBD6E1A19CF506700FF1E35 /* RestaurantTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RestaurantTableViewCell.swift; sourceTree = "<group>"; };
 		EFBD6E1C19CF519700FF1E35 /* turkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = turkey.jpg; sourceTree = "<group>"; };
 		EFBD6E1E19CF63F900FF1E35 /* FiltersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FiltersViewController.swift; sourceTree = "<group>"; };
 		EFBD6E2019CF725D00FF1E35 /* stars_4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = stars_4.png; sourceTree = "<group>"; };
 		EFBD6E2219CF960500FF1E35 /* categoryTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = categoryTableViewCell.swift; sourceTree = "<group>"; };
+		EFE3D6E819D1C80100ABBD74 /* header.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = header.xib; sourceTree = "<group>"; };
+		EFE3D6EA19D1C86100ABBD74 /* headerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = headerView.swift; sourceTree = "<group>"; };
 		EFEB046C19CD2DFD003E3D88 /* yelp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = yelp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFEB047019CD2DFD003E3D88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFEB047119CD2DFD003E3D88 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +128,8 @@
 			children = (
 				EFEB047119CD2DFD003E3D88 /* AppDelegate.swift */,
 				EFEB047519CD2DFD003E3D88 /* Main.storyboard */,
+				EFE3D6E819D1C80100ABBD74 /* header.xib */,
+				EFE3D6EA19D1C86100ABBD74 /* headerView.swift */,
 				EFBD6E2219CF960500FF1E35 /* categoryTableViewCell.swift */,
 				EFEB047819CD2DFD003E3D88 /* Images.xcassets */,
 				EFBD6E1719CD3A9400FF1E35 /* API */,
@@ -125,6 +141,11 @@
 				EFBD6E2019CF725D00FF1E35 /* stars_4.png */,
 				EFBD6E1A19CF506700FF1E35 /* RestaurantTableViewCell.swift */,
 				EFBD6E1E19CF63F900FF1E35 /* FiltersViewController.swift */,
+				EF753B5D19D0826900BBDCE2 /* iconmonstr-sort-10-icon-16.png */,
+				EF753B6319D08D1500BBDCE2 /* iconmonstr-circle-outline-icon-16.png */,
+				EF753B5B19CFE34B00BBDCE2 /* sortTableViewCell.swift */,
+				EF753B5F19D0836000BBDCE2 /* distanceTableViewCell.swift */,
+				EF753B6519D08E4200BBDCE2 /* dealsTableViewCell.swift */,
 			);
 			path = yelp;
 			sourceTree = "<group>";
@@ -236,8 +257,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF753B5E19D0826900BBDCE2 /* iconmonstr-sort-10-icon-16.png in Resources */,
+				EF753B6419D08D1500BBDCE2 /* iconmonstr-circle-outline-icon-16.png in Resources */,
 				EFEB047719CD2DFD003E3D88 /* Main.storyboard in Resources */,
 				EFBD6E1D19CF519700FF1E35 /* turkey.jpg in Resources */,
+				EFE3D6E919D1C80100ABBD74 /* header.xib in Resources */,
 				EFEB047C19CD2DFD003E3D88 /* LaunchScreen.xib in Resources */,
 				EFEB047919CD2DFD003E3D88 /* Images.xcassets in Resources */,
 				EFBD6E2119CF725D00FF1E35 /* stars_4.png in Resources */,
@@ -292,8 +316,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFBD6E1B19CF506700FF1E35 /* RestaurantTableViewCell.swift in Sources */,
+				EF753B5C19CFE34B00BBDCE2 /* sortTableViewCell.swift in Sources */,
 				EFEB049219CD2E9A003E3D88 /* RestaurantListViewController.swift in Sources */,
 				EFEB04D719CD3952003E3D88 /* YelpClient.swift in Sources */,
+				EF753B6019D0836000BBDCE2 /* distanceTableViewCell.swift in Sources */,
+				EFE3D6EB19D1C86100ABBD74 /* headerView.swift in Sources */,
+				EF753B6619D08E4200BBDCE2 /* dealsTableViewCell.swift in Sources */,
 				EFEB047219CD2DFD003E3D88 /* AppDelegate.swift in Sources */,
 				EFBD6E1F19CF63F900FF1E35 /* FiltersViewController.swift in Sources */,
 				EFBD6E2319CF960500FF1E35 /* categoryTableViewCell.swift in Sources */,

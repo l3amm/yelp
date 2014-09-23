@@ -20,10 +20,12 @@ class RestaurantListViewController: UIViewController,UITableViewDataSource, UITa
     
     // Search parameters
     var category: String = ""
-    var deals_filter: Bool = false
-    var radius: Int = 1000
+    var dealsValue: Bool = false
+    var distanceIdx: Int = 1
     var searchString: String = "thai"
     var sort: Int! = 2
+    
+    let distanceDict: [Int: Int] = [0: 1600, 1: 8000, 2: 32000]
     
     // Hardcode Lat/Lon since simulator makes it hard to get location
     var latitude = 37.78735890
@@ -57,7 +59,8 @@ class RestaurantListViewController: UIViewController,UITableViewDataSource, UITa
     }
     
     func search(){
-        client.searchWithTerm(category, deals_filter: deals_filter, radius: radius, sortParam: sort, term: searchString, success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
+        let radius = distanceDict[distanceIdx]! as Int
+        client.searchWithTerm(category, deals_filter: dealsValue, radius: radius, sortParam: sort, term: searchString, success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
             let responseDictionary = response as NSDictionary?
             self.restaurantsArray = (responseDictionary!["businesses"] ?? []) as NSArray
             
@@ -86,8 +89,7 @@ class RestaurantListViewController: UIViewController,UITableViewDataSource, UITa
         let snippet = restaurantDictionary["snippet_text"] as String
         
         cell.reviewUILabel.text = snippet.stringByReplacingOccurrencesOfString("\n", withString: " ", options: nil, range: nil)
-//        println(restaurantDictionary)
-        
+
 //        Load in the large image
         let snippet_image_url_string = restaurantDictionary["image_url"] as String?
         let large_image_url_string = snippet_image_url_string?.stringByReplacingOccurrencesOfString("/ms.", withString: "/l.")
@@ -139,6 +141,9 @@ class RestaurantListViewController: UIViewController,UITableViewDataSource, UITa
         let vc = segue.destinationViewController as FiltersViewController
         vc.delegate = self
         vc.categoryString = self.category
+        vc.dealsValue = self.dealsValue
+        vc.distanceIdx = self.distanceIdx
+        vc.sortValue = self.sort
     }
     
     override func viewWillAppear(animated: Bool) {
@@ -158,7 +163,10 @@ class RestaurantListViewController: UIViewController,UITableViewDataSource, UITa
 }
 
 extension RestaurantListViewController: categoriesDelegate{
-    func updateData(category: String){
+    func updateData(category: String, dealsValue: Bool, distanceIdx: Int, sort: Int){
         self.category = category
+        self.dealsValue = dealsValue
+        self.distanceIdx = distanceIdx
+        self.sort = sort
     }
 }
