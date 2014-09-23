@@ -33,8 +33,8 @@ class RestaurantListViewController: UIViewController,UITableViewDataSource, UITa
     
     let yelpConsumerKey = "3hOexDEZj6cbY4aJnHxhlA"
     let yelpConsumerSecret = "FJAVv46vvFQGXs_AlVR9wmX7eB8"
-    let yelpTokenKey = "ve4TxTHx2pwSD_oXETc8wpXSeUb_Pqlt"
-    let yelpTokenSecret = "AgblhIIQ7zQR_Uk1uwnNela9alg"
+    let yelpTokenKey = "HJ9umyutZ8_rywIz0wTG_RdlnJ3Fkzsw"
+    let yelpTokenSecret = "A6HFdk1hdQsVU6dCWbKPjx6afbc"
 
     override func viewDidLoad() {
         super.viewDidLoad()

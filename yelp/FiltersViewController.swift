@@ -186,7 +186,7 @@ class FiltersViewController: UIViewController, UITableViewDataSource, UITableVie
             return "Deal or No Deal?"
         }
     }
-        
+    
     func tableView(tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
         if section == 0{
             return 50
